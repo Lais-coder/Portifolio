@@ -1,3 +1,29 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
   background: url(imagens/bg-mobile.jpg) no-repeat top center/cover;
 }
+body *{
+     font-family: "Marcellus", serif;
+}
+#profile p{
+  color: white;
+  font-weight: 400px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+#container{
+  width: 338px;
+  margin: 56px auto 0px;
+}
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+/*#profile img {
+  width: 112px;
+  display: block;  
+  margin: auto;
+}*/
