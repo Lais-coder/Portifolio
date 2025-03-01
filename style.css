@@ -1,20 +1,37 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-body{
-  background: url(imagens/bg-mobile.jpg) no-repeat top center/cover;
+:root {
+  --text-color: white;
+  --bg-url: url("imagens/bg-mobile.jpg");
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --suface-color: rgba(255, 255, 255, 0.1);
+  --suface-color-hover: rgba(0, 0, 0, 0.02);
+  --hightligh-color: rgba(255, 255, 255, 0.2);
 }
-body *{
-     font-family: "Marcellus", serif;
-     color: white;
+.light {
+  --text-color: black;
+  --bg-url: url("imagens/bg-mobile-light.jpg");
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --suface-color: rgba(0, 0, 0, 0.5);
+  --suface-color-hover: rgba(0, 0, 0, 0.06);
+  --hightligh-color: rgba(0, 0, 0, 0.1);
 }
-#profile p{
-  font-weight: 400px;
+body {
+  background: var(--bg-url) no-repeat top center / cover;
+  color: var(--text-color);
+}
+body * {
+  font-family: "Marcellus", serif;
+  color: var(--text-color);
+}
+#profile p {
+  font-weight: 400;
   line-height: 24px;
   margin-bottom: 18px;
 }
-#container{
+#container {
   width: 360px;
   margin: 50px auto 0px;
   padding: 0 24px;
@@ -22,13 +39,8 @@ body *{
 #profile {
   text-align: center;
   padding: 0 24px;
-  padding-bottom: 0px ;
+  padding-bottom: 0px;
 }
-/*#profile img {
-  width: 112px;
-  display: block;  
-  margin: auto;
-}*/
 ul {
   list-style: none;
   display: flex;
@@ -37,12 +49,12 @@ ul {
   padding: 14px 0;
 }
 ul li a {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -50,29 +62,27 @@ ul li a {
   font-weight: 500;
   transition: background 0.2s;
 }
-ul li a:hover{
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid white
+ul li a:hover {
+  background-color: var(--suface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
-#icons-style{
+#icons-style {
   display: flex;
   justify-content: center;
   font-size: 24px;
 }
-
-#icons-style a{ 
+#icons-style a {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px;
   transition: background 0.2s;
-  border-radius:50%;
+  border-radius: 50%;
 }
-#icons-style a:hover{ 
-  background-color: rgba(255, 255, 255, 0.2);
+#icons-style a:hover {
+  background-color: var(--hightligh-color);
 }
-footer{
+footer {
   text-align: center;
   font-size: 14px;
-  
 }
