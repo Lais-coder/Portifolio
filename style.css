@@ -7,15 +7,12 @@ body{
 }
 body *{
      font-family: "Marcellus", serif;
+     color: white;
 }
 #profile p{
   font-weight: 400px;
   line-height: 24px;
   margin-bottom: 18px;
-  color: white;
-}
-a {
-  color: white;
 }
 #container{
   width: 360px;
@@ -58,7 +55,6 @@ ul li a:hover{
   border: 1.5px solid white
 }
 #icons-style{
-  color: white;
   display: flex;
   justify-content: center;
   font-size: 24px;
@@ -74,4 +70,9 @@ ul li a:hover{
 }
 #icons-style a:hover{ 
   background-color: rgba(255, 255, 255, 0.2);
+}
+footer{
+  text-align: center;
+  font-size: 14px;
+  
 }
