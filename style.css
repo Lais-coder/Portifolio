@@ -23,6 +23,7 @@
 body {
   background: var(--bg-url) no-repeat top center / cover;
   color: var(--text-color);
+  height: 100vh;
 }
 body * {
   font-family: "Marcellus", serif;
@@ -121,4 +122,12 @@ footer {
   text-align: center;
   font-size: 14px;
   padding-bottom: 5px;
+}
+@media (min-width: 700px){
+  :root {
+    --bg-url: url("imagens/bg-desktop.jpg");
+  }
+  .light {
+    --bg-url: url("imagens/bg-mobile-light.jpg");
+  }
 }
